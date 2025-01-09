@@ -5,16 +5,16 @@
 }:
 buildGoModule rec {
   pname = "varnishlog-parser";
-  version = "0.2.2";
+  version = "0.2.7";
 
   src = fetchFromGitHub {
     owner = "aorith";
     repo = "varnishlog-parser";
     rev = "v${version}";
-    sha256 = "sha256-Jl36MDqQF4m2V2Z2uj84slUR5ZLbn0LgW4wPD4UlvEY=";
+    sha256 = "sha256-78Rk9SnCk5Hq5BC+6WgRb0aeUTcKY+K8+rLx1/gIv/Q=";
   };
 
-  vendorHash = "sha256-y7y3YIJJMYcubdJm9lIiLeucEKYPnU3Dw0gVYZCDNYI=";
+  vendorHash = "sha256-84hpEJPYS4z3dnXye+gYx1dx199tlcV5Gbzykq3HFlE=";
 
   meta = with lib; {
     description = "A varnishlog parser library and web user interface";
